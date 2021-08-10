@@ -1,0 +1,9 @@
+GET /                            controllers.Default.redirect(to = "/hello")
+
+GET /hello                       hello.HelloController.index
+GET /hello/submit                hello.HelloController.submit
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET           /assets/*file                                                           controllers.Assets.at(path="/public", file)
+

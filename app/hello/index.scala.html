@@ -1,0 +1,16 @@
+@()
+
+@html.main("Hello") {
+  <form method="GET" action="@hello.routes.HelloController.submit()">
+
+    <div>
+      <label>Please enter your name</label>
+      <input type="text" name="usersName" />
+    </div>
+
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
+
+  </form>
+}
